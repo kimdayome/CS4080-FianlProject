@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Spotify-Inspired Web 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based web app mimicking the Spotify desktop application. complete with playback, add-ons, and user authentication. Please follow the steps below to set up and run the project.
 
-## Available Scripts
+# Requirements
 
-In the project directory, you can run:
+Environment:
 
-### `npm start`
+1. Node.js (Version 16 or higher)
+2. npm (included with Node.js)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Installation:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install 
 
-### `npm test`
+-> please run the command in the project directory to install all required Node.js modules if the current modules do not work
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Running the App
 
-### `npm run build`
+PORT=5173 npm start or npm run start or npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-> In case npm run start (likely wouldn't work), ensure that the app is forced to run on PORT 5173 (as configured with 5173 for Spotify Intergration)
+-> If website does not open, please open your browser and visit: http://localhost:5173
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Login
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Please click "login" to authenticate with your Spotify account. (but Spotify Premium is required for playback functionality for the Playback SDK)
 
-### `npm run eject`
+# Notes for the Professor
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. The project only relies on Spotify's Web API in terms of functionality. Ensure the app is running on PORT 5173, as specified, to meet the Spotify's redirect requirements.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Please login with your vaild Spotify accounts to see functions.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Trubleshooting
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. If the app doesn't start:
 
-## Learn More
+- Verify that Node.js and npm are installed
+- Run npm install again to make sure all dependencies are installed
+- Ensure no other app is using PORT 5173
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. If Spotify playback doesn't work:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Verify that your Spotify account and app are active (desktop app)
+- Confirm the PORT=5173 requirement is met
 
-### Code Splitting
+3. Missing Dependencies (ex: Axios):
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- If the package.json file does not include axios, install it manually by 'npm install axios'
