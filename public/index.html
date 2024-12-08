@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pintofiy</title>
+  </head>
+  <body>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <div id="root"></div> <!-- React will render EVERYTHING here, remember this is the entry point (will run index.html and index.js together)-->
+    <!-- The js bundles will be injected here automatically -->
+  </body>
+</html>
+
+<!-- 
+
+Note for Jessica <3
+
+* index.html and index.js run first (entry point), this is principal and won't change
+* when the index.js runs, it tells the react to render the app components to inject into the 'root'
+* so in the index.js, 'ReactDOM.render() is the component you want to render. in that case, the components under that one are child components.'
+* so the flow is index.js & index.html -> App.js -> the compoents injected in 'root', which is inside index.html
+
+-->

@@ -1,0 +1,76 @@
+/* Playlist.css */
+
+/* This is how you import google font, if you don't like this font: https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { /* for this, you are applying this font to the entire Sidebar.css file */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+    margin: 0; /* 모든 html 요소 사용하여 상단 여백 없애기 */
+    padding: 0; /* 모든 html 요소 사용하여 상단 여백 없애기 */
+}
+
+.section-title {
+    color: white;
+    font-size: 30px;
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+
+.playlists-main {
+    background-color: black;
+    padding: 100px;
+    width: 100%; /* we need space for add-ons */
+    max-width: 1200px; 
+    margin: auto; /* center it horizontaly */
+}
+
+.playlists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.playlist {
+    flex-basis: 23%;
+}
+
+.playlist-thumb {
+    width: 80%;
+    border-radius: 16px;
+}
+
+.playlist-title {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 16px 0 8px;
+}
+
+.playlist-artist {
+    color: #868686;
+    margin: 0;
+}
+
+.addons .addonsTitle {
+    font-size: 20px;
+}
+
+.add-to-myaddons-btn {
+    background-color: #1db954;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.add-to-myaddons-btn:hover {
+    background-color: #1ed760;
+}

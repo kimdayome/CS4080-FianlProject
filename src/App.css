@@ -1,0 +1,102 @@
+/* App.css */
+
+/* Main App layout */
+.App {
+    display: flex; /* Align Sidebar and Main Content */
+    color: white; /* White text for readability */
+    background-color: black; /* Black background for the entire app */
+}
+
+/* Main container for Topmain, Playlists, and Add-ons */
+main {
+    display: flex; /* Arrange content and Add-ons side by side */
+    flex-grow: 1; /* Allow it to expand and fill space */
+    margin-left: 291px; /* Prevent Sidebar overlap */
+    gap: 20px; 
+    padding: 20px; 
+}
+
+/* Content container for Topmain and Playlists! */
+.content {
+    display: flex;
+    flex-direction: column; 
+    flex-grow: 2;
+    gap: 20px; 
+}
+
+/* Search bar section */
+.search-section {
+    display: block; /* Stack search input and button vertically */
+    background-color: black; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-top: 20px; 
+}
+
+.search-section form {
+    display: flex; 
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 20px; 
+}
+
+/* Input styling */
+.search-section input {
+    padding: 8px; 
+    border: 1px solid rgb(158, 158, 158);
+    background-color: #222; 
+    color: rgb(201, 201, 201); 
+    border-radius: 5px; 
+    width: 150px;
+}
+
+/* Button styling */
+.search-section button {
+    padding: 8px 16px; 
+    background-color: #1db954; 
+    color: black; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.search-section button:hover {
+    background-color: #14833b; /* Slightly darker */
+}
+
+/* Artist results grid */
+.artist-results {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 20px; /* Space between artist cards */
+    margin-top: 30px; /* Space above results */
+}
+
+.track-item {
+    color: rgb(195, 195, 195);
+}
+
+.track-item img {
+    border-radius: 7px;
+}
+
+.track-item .playbutton {
+    margin-top: 5px;
+}
+
+/* 
+
+1. display: flex; in this case, makes the .App container a flexbox container, which changes how its
+childerent ex: sidebar, <main> elements... are positioned and sized relatively to each other
+
+2. flexbox (flex) places its childeren rotizontally side by side in a row. side - main (contatining 
+the Topmain) will sit to each other
+
+3. with the flex, you can control how the items grow or shrink based on available space.
+
+Note : the reason for using the 'display: flex; here is to create a two column where the sidebar and main 
+contents are positioned side-by-side. so handeled together in one shot
+
+Note 2 : Alternatively, if you dont want to have the 'main' part here (which applies globablly to the app.js,
+add another div class in Topmain.js and apply styles to Topmain.css file
+
+*/

@@ -1,0 +1,73 @@
+/* Sidebar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    padding: 30px;
+    background-color: #161519;
+    color: white;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.logo {
+    padding: 24px 28px;
+    height: 50px;
+    width: 50px;
+}
+
+.profile-section {
+    text-align: center; /* Center the profile section */
+    margin: 20px 0; /* Add space around profile */
+    border-bottom: 1px solid #444; /* Separator */
+    padding-bottom: 20px;
+}
+
+.profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-email {
+    font-size: 12px;
+    color: #bbb;
+}
+
+.menu-items {
+    margin: 0;
+    margin-bottom: 48px;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 0px;
+}
+
+.menu-item.active {
+    background-color: rgba(200, 200, 255, 0.1);
+    color: #ffffff;
+}

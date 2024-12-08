@@ -1,0 +1,70 @@
+/* Player.css */
+
+/* This is how you import google font, if you don't like this font: https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { /* for this, you are applying this font to the entire Sidebar.css file */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+    margin: 0; /* 모든 html 요소 사용하여 상단 여백 없애기 */
+    padding: 0; /* 모든 html 요소 사용하여 상단 여백 없애기 */
+}
+
+.player {
+    height: 100px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  .player-main {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    justify-content: space-between;
+    padding: 16px 40px;
+    background-color: rgba(48, 48, 55, 0.7);
+    backdrop-filter: blur(15px); /* glass effect */
+  }
+
+.controls button {
+  color: rgb(58, 58, 58);
+  background-color: none;
+}
+
+  
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .current {
+    border-radius: 14px;
+  }
+  
+  .controls button {
+    background-color: transparent; /*  transparent */
+    border: none; /* no borders */
+    color: white; 
+    font-size: 13px;
+    padding: 8px 14px;
+    border-radius: 12px; /* Round buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover animation! */
+    cursor: pointer;
+}
+.controls button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* slight light hover effect */
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+.controls button:disabled {
+    color: rgba(255, 255, 255, 0.5); /* disabled buttons */
+    cursor: not-allowed; /* Show forbidden cursor */
+}

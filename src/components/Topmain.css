@@ -1,0 +1,87 @@
+/* Topmain.css */
+
+/* This is how you import google font, if you don't like this font: https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* { /* for this, you are applying this font to the entire Sidebar.css file */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.topmain-main {
+    background-color: black;
+    padding: 25px;
+    
+}
+
+.topmain {
+    display: flex;
+    gap: 40px;
+}
+
+.topmain-thumb {
+    border: 24px;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.topmain-content {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.topmain-tag {
+    width: fit-content;
+    background-color: #18181b;
+    border-radius: 16px;
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 24px;
+    color: #636363;
+}
+
+.topmain-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    color: white;
+    margin: 0;
+}
+
+.topmain-description {
+    margin: 0;
+    color: #868686;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: block;
+    align-items: center;
+    gap: 10px;
+}
+
+.auth-buttons a,
+.auth-buttons button {
+    background-color: #1db954;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.auth-buttons button:hover,
+.auth-buttons a:hover {
+    background-color: #14833b;
+}
+

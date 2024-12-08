@@ -1,0 +1,30 @@
+/* RecommendedArtists.css */
+
+.recommended-artists {
+    margin-bottom: 100px;
+}
+
+.artists {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 32px;
+    justify-content: center; /* Center the artists */
+}
+
+.artist {
+    width: 120px;
+    text-align: center;
+}
+
+.artist-profile {
+    width: 100%;
+    border-radius: 50%; 
+    border: 2px solid #ccc; 
+}
+
+.artist-name {
+    font-weight: 500;
+    font-size: 16px; 
+    margin-top: 12px; /* Add space between image and name */
+    color: white; 
+}
